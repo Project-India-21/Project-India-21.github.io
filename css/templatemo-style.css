@@ -1,3 +1,23 @@
+
+/* page scrollbar start */
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #c0c0c8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #024572;
+}
+
+/* page scrollbar end */
+
+
+
 /*
 
 Hydro Template 
