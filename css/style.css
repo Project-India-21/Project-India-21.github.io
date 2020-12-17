@@ -653,12 +653,27 @@ http://www.templatemo.com/tm-509-hydro
   -----------------------------------------*/
 
   #contact {
-    background: #00F260;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    }
+
+  #contact .section-title h1 {
+    color: #ffffff;
+    font: bold;
+  }
+  
+  .list {
+    box-shadow: 0 4px 12px 0 rgba(255, 255, 255, 0.2),
+      0 6px 30px 0 rgba(69, 45, 202, 0.836);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top:5%;
+    border-radius: 2%;
+    background-color: #ffffff;
   }
 
-  #contact .section-title h2 {
+  .label{
     color: #ffffff;
   }
 

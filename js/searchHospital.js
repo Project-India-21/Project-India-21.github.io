@@ -70,10 +70,12 @@ function searchHospital() {
         var facilitiesName = element.facilitiesName;
         var facilitiesPrice = element.facilitiesPrice;
         var type = element.type;
-
+        var dist = element.dist;
+        
         HTML += 
         `<div class="col-lg-12">
-        <div class="card list">
+        <div class="card">
+        <div class="list">
           <h2><b>${name}</b></h2>
           <div class="row">
             <div class="col-lg-3">
@@ -90,6 +92,11 @@ function searchHospital() {
             <div class="col-lg-3">
               <h4><b>Type</b><br />${type}</h4>
             </div>
+            <div class="col-lg-12">
+              <h4><b>Distance</b><br>${dist} </h4>
+            </div>
+
+          </div>
           </div>
           </div>
         </div>
