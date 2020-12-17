@@ -55,10 +55,6 @@
 
               <h3 style="color: white">Location Coordinates</h3>
 
-              <!-- <div class="col-md-12 col-sm-12">
-                                   <input type="button" class="form-control" onclick="getLocation()" value="Click here to detect location">
-                              </div> -->
-
               <div class="col-md-6 col-sm-6">
                 <input
                   type="number"
@@ -98,92 +94,23 @@
     </section>
 
     <section>
-      <div class="container">
+      <div class="container" id="hospitalList">
         <div class="row">
-          
           <style>
             .list {
-               box-shadow: 0 4px 8px 0 rgba(185, 206, 230, 0.2),
+              box-shadow: 0 4px 8px 0 rgba(185, 206, 230, 0.2),
                 0 6px 20px 0 rgba(160, 20, 185, 0.438);
-               padding: 15%, 25%, 15%, 20%;
-               margin: 10%, 10%, 10%, 10%;
+              padding: 15%, 25%, 15%, 20%;
+              margin: 10%, 10%, 10%, 10%;
             }
           </style>
 
           <div class="col-lg-12">
-               <h1><b>Nearest Hospitals</b></h1>
+            <h1><b>Nearest Hospital</b></h1>
           </div>
 
-          <div class="col-lg-12">
-            <div class="card list">
-              <h2 id="name1" ><b>Name</b></h2>
-              <div class="row">
-                <div class="col-lg-3">
-                  <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
-                </div>
-                <div class="col-lg-3">
-                  <h4>
-                    <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
-                    9828874462
-                  </h4>
-                </div>
-                <div class="col-lg-3">
-                  <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
-                </div>
-                <div class="col-lg-3">
-                  <h4><b>Type</b><br />CHC</h4>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-12 hospitalCard">
           </div>
-
-
-          <div class="col-lg-12">
-               <div class="card list">
-                 <h2><b>Name</b></h2>
-                 <div class="row">
-                   <div class="col-lg-3">
-                     <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4>
-                       <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
-                       9828874462
-                     </h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4><b>Type</b><br />CHC</h4>
-                   </div>
-                 </div>
-               </div>
-             </div>
-
-             <div class="col-lg-12">
-               <div class="card list">
-                 <h2><b>Name</b></h2>
-                 <div class="row">
-                   <div class="col-lg-3">
-                     <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4>
-                       <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
-                       9828874462
-                     </h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
-                   </div>
-                   <div class="col-lg-3">
-                     <h4><b>Type</b><br />CHC</h4>
-                   </div>
-                 </div>
-               </div>
-             </div>
-
 
         </div>
       </div>
@@ -197,6 +124,6 @@
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
 
-    <script src="js/searchHospital.js"
+    <script src="js/searchHospital.js"></script>
   </body>
 </html>

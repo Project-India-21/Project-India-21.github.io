@@ -11,6 +11,8 @@ const addHospital = () => {
   var state = document.getElementById("state").value;
   var type = document.getElementById("type").value;
 
+  document.getElementById("submit").innerHTML = "Adding !"
+
   console.log(name, openTime, closeTime, main, secondary);
 
   var myHeaders = new Headers();
