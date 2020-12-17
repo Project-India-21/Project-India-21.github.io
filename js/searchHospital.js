@@ -1,13 +1,15 @@
-  // if (navigator.geolocation) {
-  //   navigator.geolocation.getCurrentPosition(displayLocationInfo);
-  // }
-  
-  // function displayLocationInfo(position) {
-  //   var lon = position.coords.longitude;
-  //   var lat = position.coords.latitude;
-  
-  //   console.log(`longitude: ${ lon } | latitude: ${ lat }`);
-  // }
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(displayLocationInfo);
+}
+
+function displayLocationInfo(position) {      
+  lon = position.coords.longitude;
+  lat = position.coords.latitude;
+  document.getElementById("lat").value = lat;
+  document.getElementById("lon").value = lon;
+
+  console.log(`longitude: ${ lon } | latitude: ${ lat }`);
+}
 
 function searchHospital() {
 
@@ -20,20 +22,12 @@ function searchHospital() {
 
     var lat;
     var lon;
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(displayLocationInfo);
-    }
-    
-    function displayLocationInfo(position) {
-      lon = position.coords.longitude;
-      lat = position.coords.latitude;
-    
-      console.log(`longitude: ${ lon } | latitude: ${ lat }`);
-    }
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
-
+  
+  console.log(`longitude: ${ lon } | latitude: ${ lat }`);
+  
   var raw = JSON.stringify({
     data: { state: state, lat: lat, lon: lon, count: 3 },
   });

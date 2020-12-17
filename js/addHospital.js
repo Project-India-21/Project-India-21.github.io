@@ -23,7 +23,9 @@ const addHospital = () => {
       hospital: {
         closeTime: closeTime,
         contact: { main: main, secondary: secondary },
-        facilities: { [facilitiesName]: facilitiesPrice },
+        // facilities: { [facilitiesName]: facilitiesPrice },
+        facilitiesName:facilitiesName,
+        facilitiesPrice: facilitiesPrice,
         lat: lat,
         lon: lon,
         name: name,
