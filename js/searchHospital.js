@@ -1,6 +1,20 @@
-const searchHospital = () => {
-  var lat = document.getElementById("lat").value;
-  var lon = document.getElementById("lon").value;
+// function getLocation() {
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(showPosition);
+//     var lat = position.coords.latitude;  
+//     var lon = position.coords.longitude;
+//   } else { 
+//     alert("Geolocation is not supported by this browser.");
+//   }
+// }
+
+//   console.log(position.coords.latitude, position.coords.longitude);
+
+
+function searchHospital() {
+
+  // var lat = document.getElementById("lat").value;
+  // var lon = document.getElementById("lon").value;
   var state = document.getElementById("state").value;
 
   var myHeaders = new Headers();
@@ -22,16 +36,19 @@ const searchHospital = () => {
     requestOptions
   )
     .then(async (response) => {
-      console.log(typeof(response));
+      console.log(typeof (response));
       var hospital = await response.json();
 
-      console.log(typeof(hospital.result));
+      console.log(typeof (hospital.result));
 
       hospital.result.hospitals.forEach(element => {
-          console.log(element.name);
-          console.log(element.contact.main);
+        console.log(element.name);
+        console.log(element.contact.main);
+        console.log(element.openTime);
+        
+        
       });
 
     })
     .catch((error) => console.log("error", error));
-};
+}

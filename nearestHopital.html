@@ -1,97 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Project 21 - India</title>
 
-     <title>Project 21 - India</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/magnific-popup.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>
+    <!-- PRE LOADER -->
+    <section class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
-</head>
-<body>
-
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
+    <!-- CONTACT -->
+    <section id="contact" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>Search hospitals</h2>
+              <span class="line-bar">...</span>
+            </div>
           </div>
-     </section>
 
-     <!-- CONTACT -->
-     <section id="contact" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <!-- CONTACT FORM HERE -->
+            <form id="searchHospital" role="form">
+              <div class="col-md-12 col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Hospital State"
+                  id="state"
+                  name="state"
+                  required=""
+                />
+              </div>
 
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Search hospitals</h2>
-                              <span class="line-bar">...</span>
-                         </div>
-                    </div>
+              <h3 style="color: white">Location Coordinates</h3>
 
-                    <div class="col-md-12 col-sm-12">
-                        
-                         <!-- CONTACT FORM HERE -->
-                         <form id="searchHospital" role="form">
-                              <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Hospital State" id="state" name="state" required="">
-                              </div>
+              <!-- <div class="col-md-12 col-sm-12">
+                                   <input type="button" class="form-control" onclick="getLocation()" value="Click here to detect location">
+                              </div> -->
 
-                              <h3 style="color:white">Location Coordinates</h3>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="number" class="form-control" placeholder="Latitude" id="lat" name="lat" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Latitude"
+                  id="lat"
+                  name="lat"
+                  required=""
+                />
+              </div>
 
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="number" class="form-control" placeholder="Longitude" id="lon" name="lon" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Longitude"
+                  id="lon"
+                  name="lon"
+                  required=""
+                />
+              </div>
 
-                              <div class="col-md-12 col-sm-12">
-                                   <input type="button" class="form-control" id="submit" name="submit" onclick="searchHospital()" value="Add Hospital">
-                              </div>
-                              
-                         </form>
-                    </div>
+              <div class="col-md-12 col-sm-12">
+                <input
+                  type="button"
+                  class="form-control"
+                  id="submit"
+                  name="submit"
+                  onclick="searchHospital()"
+                  value="Add Hospital"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <div class="row">
+          
+          <style>
+            .list {
+               box-shadow: 0 4px 8px 0 rgba(185, 206, 230, 0.2),
+                0 6px 20px 0 rgba(160, 20, 185, 0.438);
+               padding: 15%, 25%, 15%, 20%;
+               margin: 10%, 10%, 10%, 10%;
+            }
+          </style>
+
+          <div class="col-lg-12">
+               <h1><b>Nearest Hospitals</b></h1>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="card list">
+              <h2 id="name1" ><b>Name</b></h2>
+              <div class="row">
+                <div class="col-lg-3">
+                  <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
+                </div>
+                <div class="col-lg-3">
+                  <h4>
+                    <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
+                    9828874462
+                  </h4>
+                </div>
+                <div class="col-lg-3">
+                  <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
+                </div>
+                <div class="col-lg-3">
+                  <h4><b>Type</b><br />CHC</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-12">
+               <div class="card list">
+                 <h2><b>Name</b></h2>
+                 <div class="row">
+                   <div class="col-lg-3">
+                     <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4>
+                       <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
+                       9828874462
+                     </h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4><b>Type</b><br />CHC</h4>
+                   </div>
+                 </div>
                </div>
-          </div>
-     </section>
+             </div>
 
-     <section>
-          <div class="container">
-
-               <div class="row">
-
-                    <div class="col-lg-12">
-
-                         <span id="name"></span>
-                         <span id="main"></span>
-                    </div>     
-
+             <div class="col-lg-12">
+               <div class="card list">
+                 <h2><b>Name</b></h2>
+                 <div class="row">
+                   <div class="col-lg-3">
+                     <h4><b>Timings</b><br />9:00 AM - 18:00 PM</h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4>
+                       <b>Contact Details<br /></b>Main: 9680017462<br />Secondary:
+                       9828874462
+                     </h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4><b>Facilities</b><br />Eye Care - 200 Rs</h4>
+                   </div>
+                   <div class="col-lg-3">
+                     <h4><b>Type</b><br />CHC</h4>
+                   </div>
+                 </div>
                </div>
-          </div>
-     </section>
+             </div>
 
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
-     <script src="js/jquery.magnific-popup.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+        </div>
+      </div>
+    </section>
 
-     <script src="js/searchHospital.js"
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
-</body>
+    <script src="js/searchHospital.js"
+  </body>
 </html>
