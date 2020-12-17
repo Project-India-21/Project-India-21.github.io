@@ -21,14 +21,17 @@ const searchHospital = () => {
     "https://us-central1-project-21-3c016.cloudfunctions.net/getNearbyHospitals",
     requestOptions
   )
-    .then((response) => {
-      console.log(response);
-      document.getElementById("name").textContent =
-        response.result.hospitals[0].name;
-      document.getElementById("main").textContent =
-        response.result.hospitals[0].contact.main;
-      return response.text();
+    .then(async (response) => {
+      console.log(typeof(response));
+      var hospital = await response.json();
+
+      console.log(typeof(hospital.result));
+
+      hospital.result.hospitals.forEach(element => {
+          console.log(element.name);
+          console.log(element.contact.main);
+      });
+
     })
-    .then((result) => console.log(result))
     .catch((error) => console.log("error", error));
 };
