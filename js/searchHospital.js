@@ -1,8 +1,35 @@
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(displayLocationInfo);
+  // }
+  
+  // function displayLocationInfo(position) {
+  //   var lon = position.coords.longitude;
+  //   var lat = position.coords.latitude;
+  
+  //   console.log(`longitude: ${ lon } | latitude: ${ lat }`);
+  // }
+
 function searchHospital() {
 
   document.getElementById("submit").value = "Searching !"
 
-  var state = document.getElementById("state").value;
+    var state = document.getElementById("state").value;
+
+    var lat = document.getElementById("lat").value;
+    var lon = document.getElementById("lon").value;
+
+    var lat;
+    var lon;
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(displayLocationInfo);
+    }
+    
+    function displayLocationInfo(position) {
+      lon = position.coords.longitude;
+      lat = position.coords.latitude;
+    
+      console.log(`longitude: ${ lon } | latitude: ${ lat }`);
+    }
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
