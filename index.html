@@ -4,8 +4,14 @@
     <title>Project India 21</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="Find the nearest Health and Wellness Centers with a single click." content="" />
-    <meta name="Health and Wellness Centers | Hospitals | Medial Facilities | Medicines" content="" />
+    <meta
+      name="Find the nearest Health and Wellness Centers with a single click."
+      content=""
+    />
+    <meta
+      name="Health and Wellness Centers | Hospitals | Medial Facilities | Medicines"
+      content=""
+    />
     <meta name="Wakif - Kartik - Reethu - Siddharth - Vibhanshu" content="" />
     <meta
       name="viewport"
@@ -404,5 +410,31 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+
+    <!-- Firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyB8FHQJSSI5Mdwf_2i3kQmj0jApOrtRYq4",
+        authDomain: "project-21-3c016.firebaseapp.com",
+        databaseURL: "https://project-21-3c016-default-rtdb.firebaseio.com",
+        projectId: "project-21-3c016",
+        storageBucket: "project-21-3c016.appspot.com",
+        messagingSenderId: "828921683772",
+        appId: "1:828921683772:web:29e0608dcf17e50dcdc839",
+        measurementId: "G-N4JQJQ8B7V",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>
