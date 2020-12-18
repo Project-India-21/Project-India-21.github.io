@@ -1,117 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Project 21 - India</title>
 
-     <title>Project 21 - India</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/magnific-popup.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- PRE LOADER -->
+    <section class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
+      </div>
+    </section>
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
+    <!-- CONTACT -->
+    <section id="contact" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>Add new hospitals</h2>
+              <span class="line-bar">...</span>
+            </div>
           </div>
-     </section>
 
-     <!-- CONTACT -->
-     <section id="contact" data-stellar-background-ratio="0.5">
-          <div class="container">
-               <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <!-- CONTACT FORM HERE -->
+            <form id="hospital" role="form">
+              <div class="col-md-12 col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Hospital Name"
+                  id="name"
+                  name="name"
+                  required=""
+                />
+              </div>
 
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Add new hospitals</h2>
-                              <span class="line-bar">...</span>
-                         </div>
-                    </div>
+              <h3 style="color: white">Location Coordinates</h3>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Latitude"
+                  id="lat"
+                  name="lat"
+                  required=""
+                />
+              </div>
 
-                    <div class="col-md-12 col-sm-12">
-                        
-                         <!-- CONTACT FORM HERE -->
-                         <form id="hospital" role="form">
-                              <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" placeholder="Hospital Name" id="name" name="name" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Longitude"
+                  id="lon"
+                  name="lon"
+                  required=""
+                />
+              </div>
 
-                              <h3 style="color:white">Location Coordinates</h3>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="number" class="form-control" placeholder="Latitude" id="lat" name="lat" required="">
-                              </div>
+              <h3 style="color: white">Timings.</h3>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="time"
+                  class="form-control"
+                  placeholder="Opening time"
+                  id="openTime"
+                  name="openTime"
+                  required=""
+                />
+              </div>
 
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="number" class="form-control" placeholder="Longitude" id="lon" name="lon" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="time"
+                  class="form-control"
+                  placeholder="Closing time"
+                  id="closeTime"
+                  name="closeTime"
+                  required=""
+                />
+              </div>
 
-                              <h3 style="color:white">Timings.</h3>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="time" class="form-control" placeholder="Opening time" id="openTime" name="openTime" required="">
-                              </div>
+              <h3 style="color: white">Contact Numbers</h3>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Main Number"
+                  id="main"
+                  name="main"
+                  required=""
+                />
+              </div>
 
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="time" class="form-control" placeholder="Closing time" id="closeTime" name="closeTime" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Secondary Number"
+                  id="secondary"
+                  name="secondary"
+                  required=""
+                />
+              </div>
 
-                              <h3 style="color:white">Contact Numbers </h3>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="Main Number" id="main" name="main" required="">
-                              </div>
+              <div class="col-md-6 col-sm-6">
+               <h3 style="color: white">State</h3>
+                <select id="state" class="custom-select" name="instructor">
+                  <option value="Rajasthan">Rajasthan</option>
 
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="Secondary Number" id="secondary" name="secondary" required="">
-                              </div>
-                              <h3><br></h3>
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="State" id="state" name="state" required="">
-                              </div>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
 
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" placeholder="Type" id="type" name="type" required="">
-                              </div>
+                  <option value="Andra Pradesh">Andra Pradesh</option>
 
-                              <h3 style="color:white">Facilites</h3>
+                  <option value="Telangana">Telangana</option>
+                </select>
+              </div>
 
-                              <div class="col-md-6 col-sm-6">
-                                <input type="text" class="form-control" placeholder="Facility Name" id="facilitiesName" name="facilitiesName" required="">
-                              </div>
-                              
-                              <div class="col-md-6 col-sm-6">
-                                   <input type="number" class="form-control" placeholder="Facility Price" id="facilitiesPrice" name="facilitiesPrice" required="">
-                              </div>
-                         
-                              <div class="col-md-12 col-sm-12">
-                                   <input type="button" class="form-control" id="submit" name="submit" onclick="addHospital()" value="Add Hospital">
-                              </div>
-                              
-                         </form>
-                    </div>
+              <div class="col-md-6 col-sm-6">
+               <h3 style="color: white">Type</h3>
+               <select id="type" class="custom-select" name="instructor">
+                 <option value="CHC">CHC</option>
+
+                 <option value="PHC">PHC</option>
+               </select>
 
                </div>
+              <h3 style="color: white">Facilites</h3>
+
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Facility Name"
+                  id="facilitiesName"
+                  name="facilitiesName"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Facility Price"
+                  id="facilitiesPrice"
+                  name="facilitiesPrice"
+                  required=""
+                />
+              </div>
+
+              <div class="col-md-12 col-sm-12">
+                <input
+                  type="button"
+                  class="form-control"
+                  id="submit"
+                  name="submit"
+                  onclick="addHospital()"
+                  value="Add Hospital"
+                />
+              </div>
+            </form>
           </div>
-     </section>
+        </div>
+      </div>
+    </section>
 
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/jquery.stellar.min.js"></script>
-     <script src="js/jquery.magnific-popup.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 
-     <script src="js/addHospital.js"
-
-</body>
+    <script src="js/addHospital.js"
+  </body>
 </html>

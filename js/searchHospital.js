@@ -102,4 +102,5 @@ function searchHospital() {
       document.getElementById("submit").style.display = "none";
     })
     .catch((error) => console.log("error", error));
+    
 }
