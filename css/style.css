@@ -22,6 +22,29 @@
   width: 100%;
 }
 
+/* Sumbit button */
+.sumbit-button {
+  background: rgb(232,232,245);
+  background: radial-gradient(circle, rgba(232,232,245,1) 6%, rgba(0,212,255,1) 33%, rgba(91,255,0,1) 100%);  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sumbit-button:hover,
+.sumbit-button:focus {
+  background: #00F260;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-color: transparent;
+  color: #393939;
+}
+
 .label{
   color: white;
 }
