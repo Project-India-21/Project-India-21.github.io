@@ -11,7 +11,7 @@ const addHospital = () => {
   var state = document.getElementById("state").value;
   var type = document.getElementById("type").value;
 
-  document.getElementById("submit").innerHTML = "Adding !"
+  document.getElementById("submit").value = "Adding !"
 
   console.log(name, openTime, closeTime, main, secondary);
 
@@ -51,6 +51,7 @@ const addHospital = () => {
     .then((result) => {
       console.log(result);
       alert("Hospital Sucessfully Added !");
+      document.getElementById("submit").value = "Adding Sucessfully !"
     })
     .catch((error) => {
       console.log("error", error);
